@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace masskontr42
+{
+    class Program
+    {
+        static Random random = new Random();
+        static void Main(string[] args)
+        {   
+            
+            //Random random = new Random();
+            int [,] arr = new int [2,3];
+            inPrint(arr);
+            for (int i = 0; i < 2; i++ ) {
+                for (int j = 0; j < 3; j++ ) {
+                Console.WriteLine(arr[i,j]); 
+                }
+                
+            
+            }
+            Console.ReadKey();
+        }
+        //11 заполнение масс
+        static void inPrint(int [,] arr) {
+          
+            for (int i = 0; i < 2; i++ ) {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.WriteLine("Введи число");
+                    arr[i, j] = random.Next(0, 10);;
+                }
+            }
+        }
+
+        //12 вывод прямоуг
+        static 
+        //13
+
+        //14
+
+    }
+
+
+}
